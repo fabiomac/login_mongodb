@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+	<div class="jumbotron col-md-4 col-md-offset-4">
+	<div class="container text-center">
+        <h1>Login</h1>
+        <p class="lead">Example of login in Flask+MongoDB(PyMongo)</p>
+        {% if session.logged_in == NUL %}
+          <a href="/register" class="btn btn-primary btn-lg">Register</a>
+          <a href="/login" class="btn btn-success btn-lg">Login</a>
+        {% endif%}
+      </div>
+      </div>
+{% endblock %}
